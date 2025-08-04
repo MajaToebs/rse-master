@@ -1,0 +1,31 @@
+project:
+  type: book
+  output-dir: output
+  post-render:
+    - rm index.loa 
+    - rm intro.aux
+    - rm outro.aux
+
+book:
+  # These have to be changed in "thesis.cfg"
+  # title: "My Title"
+  # author: "Max Mustermann"
+  # date: today
+  chapters:
+    - index.qmd # chapter1.qmd # Necessary for Quarto book format
+    - chapter2.qmd
+    - chapter3.qmd
+    - chapter4.qmd
+    - chapter5.qmd
+    - chapter6.qmd
+
+format:
+  pdf:
+    documentclass: cs-thesis
+    template: template.tex
+    cite-method: biblatex
+    bibliography: literature.bib
+    keep-tex: true
+    pdf-engine: pdflatex
+
+bibliography: literature.bib

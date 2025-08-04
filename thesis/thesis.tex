@@ -1,0 +1,299 @@
+\documentclass[
+  BCOR=10mm, % Binding correction ([default=0])
+  DIV=12, % Number of divisions for the page spread construction ([default=9])
+  twoside, % two sided ([default='oneside'])
+  headsepline, % separate head-line from content optically (horizontal row) (KOMA-Doc, Ch.'Kopf- und Fusszeilen')
+  listof=totoc, % include list of tables/figures to list of content
+  bibliography=totoc, % include list of literature to list of content
+  index=totoc, % include index to list of content
+  abstract=true, % Put an coresponding header to the abstract ([default='abstractoff'])
+  numbers=noenddot, % suppress ending dot in numberations (required? -> 'pointednumbers')
+]{cs-thesis}
+
+\hyphenation{
+  Infini-Band
+  Soft-ware
+  Soft-ware-Stack
+  Open-Fa-brics
+}
+
+\addbibresource{literature.bib}
+
+
+
+%%%%%%%%%%%%%%%%%%%%
+%%% THE DOCUMENT %%%
+%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+    \include{intro} % Title, abstract, ToC, etc. 
+    
+    % prepare main document
+    \ofoot[\pagemark]{\pagemark} % show page numbering on chapter starts
+    \nocite{*} % show all references in bibliography, no matter if used or not
+    \cleardoublepage
+    \pagenumbering{arabic}
+    \pagestyle{chapterstyle}
+    
+    \bookmarksetup{startatroot}
+
+    \chapter{Introduction}\label{cha:introduction}
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat nam
+    at lectus urna. Vitae purus faucibus ornare suspendisse sed nisi
+    lacus. Turpis egestas integer eget aliquet nibh praesent tristique
+    magna. Et netus et malesuada fames ac turpis egestas. Nunc vel risus
+    commodo viverra maecenas accumsan lacus. Nisi scelerisque eu
+    ultrices vitae auctor eu augue. Odio morbi quis commodo odio aenean
+    sed adipiscing. Ultricies lacus sed turpis tincidunt id aliquet. Sit
+    amet mattis vulputate enim nulla aliquet porttitor lacus luctus.
+    Tellus rutrum tellus pellentesque eu tincidunt tortor.
+
+    Felis eget velit aliquet sagittis id consectetur purus ut faucibus.
+    Dolor magna eget est lorem ipsum dolor sit. Sagittis aliquam
+    malesuada bibendum arcu vitae elementum curabitur. Id interdum velit
+    laoreet id donec ultrices tincidunt arcu. Ipsum nunc aliquet
+    bibendum enim facilisis. Posuere morbi leo urna molestie at
+    elementum eu facilisis. Convallis convallis tellus id interdum velit
+    laoreet id donec ultrices. Platea dictumst quisque sagittis purus
+    sit. Nec ultrices dui sapien eget mi proin sed libero enim. Amet
+    justo donec enim diam vulputate ut pharetra sit amet. Sed blandit
+    libero volutpat sed cras ornare arcu dui. Congue nisi vitae suscipit
+    tellus mauris a diam maecenas. Ac felis donec et odio.
+
+    Eget lorem dolor sed viverra ipsum nunc aliquet. Diam volutpat
+    commodo sed egestas egestas fringilla phasellus. Enim nunc faucibus
+    a pellentesque sit amet. Blandit cursus risus at ultrices mi tempus
+    imperdiet. Ornare arcu dui vivamus arcu felis bibendum ut tristique.
+    Accumsan in nisl nisi scelerisque eu ultrices. Et tortor at risus
+    viverra adipiscing. Convallis convallis tellus id interdum. Blandit
+    massa enim nec dui nunc. Vitae tortor condimentum lacinia quis vel
+    eros donec ac odio.
+
+    Justo eget magna fermentum iaculis eu. Tristique et egestas quis
+    ipsum suspendisse ultrices gravida dictum. Luctus accumsan tortor
+    posuere ac ut consequat semper viverra. Duis ut diam quam nulla
+    porttitor massa id neque aliquam. Tellus mauris a diam maecenas sed
+    enim. Et leo duis ut diam quam nulla porttitor massa. Id aliquet
+    lectus proin nibh nisl condimentum id venenatis a. Eros in cursus
+    turpis massa tincidunt. Sed pulvinar proin gravida hendrerit lectus.
+    Gravida arcu ac tortor dignissim. Est ullamcorper eget nulla
+    facilisi etiam. Netus et malesuada fames ac.
+
+    Facilisis leo vel fringilla est ullamcorper. Ultrices dui sapien
+    eget mi. Non odio euismod lacinia at quis risus sed vulputate. Id
+    ornare arcu odio ut. Enim ut sem viverra aliquet eget sit amet
+    tellus cras. Sagittis orci a scelerisque purus semper eget. Nibh
+    praesent tristique magna sit amet purus gravida quis. Adipiscing
+    elit duis tristique sollicitudin nibh. Ultrices gravida dictum fusce
+    ut placerat orci nulla pellentesque. Justo nec ultrices dui sapien
+    eget mi. Nibh tellus molestie nunc non blandit massa enim nec dui.
+    Netus et malesuada fames ac turpis egestas sed.
+
+    \bookmarksetup{startatroot}
+
+    \chapter{Background \& Motivation
+    (Why?)}\label{background-motivation-why}
+
+    \section{Section 1}\label{section-1}
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat nam
+    at lectus urna. Vitae purus faucibus ornare suspendisse sed nisi
+    lacus. Turpis egestas integer eget aliquet nibh praesent tristique
+    magna. Et netus et malesuada fames ac turpis egestas. Nunc vel risus
+    commodo viverra maecenas accumsan lacus. Nisi scelerisque eu
+    ultrices vitae auctor eu augue. Odio morbi quis commodo odio aenean
+    sed adipiscing. Ultricies lacus sed turpis tincidunt id aliquet. Sit
+    amet mattis vulputate enim nulla aliquet porttitor lacus luctus.
+    Tellus rutrum tellus pellentesque eu tincidunt tortor.
+
+    \section{Section 2}\label{section-2}
+
+    Felis eget velit aliquet sagittis id consectetur purus ut faucibus.
+    Dolor magna eget est lorem ipsum dolor sit. Sagittis aliquam
+    malesuada bibendum arcu vitae elementum curabitur. Id interdum velit
+    laoreet id donec ultrices tincidunt arcu. Ipsum nunc aliquet
+    bibendum enim facilisis. Posuere morbi leo urna molestie at
+    elementum eu facilisis. Convallis convallis tellus id interdum velit
+    laoreet id donec ultrices. Platea dictumst quisque sagittis purus
+    sit. Nec ultrices dui sapien eget mi proin sed libero enim. Amet
+    justo donec enim diam vulputate ut pharetra sit amet. Sed blandit
+    libero volutpat sed cras ornare arcu dui. Congue nisi vitae suscipit
+    tellus mauris a diam maecenas. Ac felis donec et odio.
+
+    \section{Section 3}\label{section-3}
+
+    Eget lorem dolor sed viverra ipsum nunc aliquet. Diam volutpat
+    commodo sed egestas egestas fringilla phasellus. Enim nunc faucibus
+    a pellentesque sit amet. Blandit cursus risus at ultrices mi tempus
+    imperdiet. Ornare arcu dui vivamus arcu felis bibendum ut tristique.
+    Accumsan in nisl nisi scelerisque eu ultrices. Et tortor at risus
+    viverra adipiscing. Convallis convallis tellus id interdum. Blandit
+    massa enim nec dui nunc. Vitae tortor condimentum lacinia quis vel
+    eros donec ac odio.
+
+    \section{Section 4}\label{section-4}
+
+    Justo eget magna fermentum iaculis eu. Tristique et egestas quis
+    ipsum suspendisse ultrices gravida dictum. Luctus accumsan tortor
+    posuere ac ut consequat semper viverra. Duis ut diam quam nulla
+    porttitor massa id neque aliquam. Tellus mauris a diam maecenas sed
+    enim. Et leo duis ut diam quam nulla porttitor massa. Id aliquet
+    lectus proin nibh nisl condimentum id venenatis a. Eros in cursus
+    turpis massa tincidunt. Sed pulvinar proin gravida hendrerit lectus.
+    Gravida arcu ac tortor dignissim. Est ullamcorper eget nulla
+    facilisi etiam. Netus et malesuada fames ac.
+
+    \section{Section 5}\label{section-5}
+
+    Facilisis leo vel fringilla est ullamcorper. Ultrices dui sapien
+    eget mi. Non odio euismod lacinia at quis risus sed vulputate. Id
+    ornare arcu odio ut. Enim ut sem viverra aliquet eget sit amet
+    tellus cras. Sagittis orci a scelerisque purus semper eget. Nibh
+    praesent tristique magna sit amet purus gravida quis. Adipiscing
+    elit duis tristique sollicitudin nibh. Ultrices gravida dictum fusce
+    ut placerat orci nulla pellentesque. Justo nec ultrices dui sapien
+    eget mi. Nibh tellus molestie nunc non blandit massa enim nec dui.
+    Netus et malesuada fames ac turpis egestas sed.
+
+    \section{Section 1}\label{section-1-1}
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat nam
+    at lectus urna. Vitae purus faucibus ornare suspendisse sed nisi
+    lacus. Turpis egestas integer eget aliquet nibh praesent tristique
+    magna. Et netus et malesuada fames ac turpis egestas. Nunc vel risus
+    commodo viverra maecenas accumsan lacus. Nisi scelerisque eu
+    ultrices vitae auctor eu augue. Odio morbi quis commodo odio aenean
+    sed adipiscing. Ultricies lacus sed turpis tincidunt id aliquet. Sit
+    amet mattis vulputate enim nulla aliquet porttitor lacus luctus.
+    Tellus rutrum tellus pellentesque eu tincidunt tortor.
+
+    \section{Section 2}\label{section-2-1}
+
+    Felis eget velit aliquet sagittis id consectetur purus ut faucibus.
+    Dolor magna eget est lorem ipsum dolor sit. Sagittis aliquam
+    malesuada bibendum arcu vitae elementum curabitur. Id interdum velit
+    laoreet id donec ultrices tincidunt arcu. Ipsum nunc aliquet
+    bibendum enim facilisis. Posuere morbi leo urna molestie at
+    elementum eu facilisis. Convallis convallis tellus id interdum velit
+    laoreet id donec ultrices. Platea dictumst quisque sagittis purus
+    sit. Nec ultrices dui sapien eget mi proin sed libero enim. Amet
+    justo donec enim diam vulputate ut pharetra sit amet. Sed blandit
+    libero volutpat sed cras ornare arcu dui. Congue nisi vitae suscipit
+    tellus mauris a diam maecenas. Ac felis donec et odio.
+
+    \section{Section 3}\label{section-3-1}
+
+    Eget lorem dolor sed viverra ipsum nunc aliquet. Diam volutpat
+    commodo sed egestas egestas fringilla phasellus. Enim nunc faucibus
+    a pellentesque sit amet. Blandit cursus risus at ultrices mi tempus
+    imperdiet. Ornare arcu dui vivamus arcu felis bibendum ut tristique.
+    Accumsan in nisl nisi scelerisque eu ultrices. Et tortor at risus
+    viverra adipiscing. Convallis convallis tellus id interdum. Blandit
+    massa enim nec dui nunc. Vitae tortor condimentum lacinia quis vel
+    eros donec ac odio.
+
+    \section{Section 4}\label{section-4-1}
+
+    Justo eget magna fermentum iaculis eu. Tristique et egestas quis
+    ipsum suspendisse ultrices gravida dictum. Luctus accumsan tortor
+    posuere ac ut consequat semper viverra. Duis ut diam quam nulla
+    porttitor massa id neque aliquam. Tellus mauris a diam maecenas sed
+    enim. Et leo duis ut diam quam nulla porttitor massa. Id aliquet
+    lectus proin nibh nisl condimentum id venenatis a. Eros in cursus
+    turpis massa tincidunt. Sed pulvinar proin gravida hendrerit lectus.
+    Gravida arcu ac tortor dignissim. Est ullamcorper eget nulla
+    facilisi etiam. Netus et malesuada fames ac.
+
+    \section{Section 5}\label{section-5-1}
+
+    Facilisis leo vel fringilla est ullamcorper. Ultrices dui sapien
+    eget mi. Non odio euismod lacinia at quis risus sed vulputate. Id
+    ornare arcu odio ut. Enim ut sem viverra aliquet eget sit amet
+    tellus cras. Sagittis orci a scelerisque purus semper eget. Nibh
+    praesent tristique magna sit amet purus gravida quis. Adipiscing
+    elit duis tristique sollicitudin nibh. Ultrices gravida dictum fusce
+    ut placerat orci nulla pellentesque. Justo nec ultrices dui sapien
+    eget mi. Nibh tellus molestie nunc non blandit massa enim nec dui.
+    Netus et malesuada fames ac turpis egestas sed.
+
+    \bookmarksetup{startatroot}
+
+    \chapter{Design (How?)}\label{design-how}
+
+    \% \% chapter3.tex \%
+
+    \section{\ldots{}}\label{section}
+
+    Facilisis leo vel fringilla est ullamcorper. Ultrices dui sapien
+    eget mi. Non odio euismod lacinia at quis risus sed vulputate. Id
+    ornare arcu odio ut. Enim ut sem viverra aliquet eget sit amet
+    tellus cras. Sagittis orci a scelerisque purus semper eget. Nibh
+    praesent tristique magna sit amet purus gravida quis. Adipiscing
+    elit duis tristique sollicitudin nibh. Ultrices gravida dictum fusce
+    ut placerat orci nulla pellentesque. Justo nec ultrices dui sapien
+    eget mi. Nibh tellus molestie nunc non blandit massa enim nec dui.
+    Netus et malesuada fames ac turpis egestas sed.
+
+    \bookmarksetup{startatroot}
+
+    \chapter{Implementation (What?)}\label{implementation-what}
+
+    \% \% chapter4.tex \%
+
+    \section{\ldots{}}\label{section-6}
+
+    Felis eget velit aliquet sagittis id consectetur purus ut faucibus.
+    Dolor magna eget est lorem ipsum dolor sit. Sagittis aliquam
+    malesuada bibendum arcu vitae elementum curabitur. Id interdum velit
+    laoreet id donec ultrices tincidunt arcu. Ipsum nunc aliquet
+    bibendum enim facilisis. Posuere morbi leo urna molestie at
+    elementum eu facilisis. Convallis convallis tellus id interdum velit
+    laoreet id donec ultrices. Platea dictumst quisque sagittis purus
+    sit. Nec ultrices dui sapien eget mi proin sed libero enim. Amet
+    justo donec enim diam vulputate ut pharetra sit amet. Sed blandit
+    libero volutpat sed cras ornare arcu dui. Congue nisi vitae suscipit
+    tellus mauris a diam maecenas. Ac felis donec et odio.
+
+    \bookmarksetup{startatroot}
+
+    \chapter{Experiments}\label{experiments}
+
+    \% \% chapter5.tex \%
+
+    \section{\ldots{}}\label{section-7}
+
+    Justo eget magna fermentum iaculis eu. Tristique et egestas quis
+    ipsum suspendisse ultrices gravida dictum. Luctus accumsan tortor
+    posuere ac ut consequat semper viverra. Duis ut diam quam nulla
+    porttitor massa id neque aliquam. Tellus mauris a diam maecenas sed
+    enim. Et leo duis ut diam quam nulla porttitor massa. Id aliquet
+    lectus proin nibh nisl condimentum id venenatis a. Eros in cursus
+    turpis massa tincidunt. Sed pulvinar proin gravida hendrerit lectus.
+    Gravida arcu ac tortor dignissim. Est ullamcorper eget nulla
+    facilisi etiam. Netus et malesuada fames ac.
+
+    \bookmarksetup{startatroot}
+
+    \chapter{Conclusion \& Outlook}\label{conclusion-outlook}
+
+    \% \% chapter6.tex \%
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat nam
+    at lectus urna. Vitae purus faucibus ornare suspendisse sed nisi
+    lacus. Turpis egestas integer eget aliquet nibh praesent tristique
+    magna. Et netus et malesuada fames ac turpis egestas. Nunc vel risus
+    commodo viverra maecenas accumsan lacus. Nisi scelerisque eu
+    ultrices vitae auctor eu augue. Odio morbi quis commodo odio aenean
+    sed adipiscing. Ultricies lacus sed turpis tincidunt id aliquet. Sit
+    amet mattis vulputate enim nulla aliquet porttitor lacus luctus.
+    Tellus rutrum tellus pellentesque eu tincidunt tortor.
+    
+    \include{outro} % Appendix etc.
+
+\end{document}

@@ -1,0 +1,8 @@
+%
+% chapter4.tex
+%
+
+# Implementation (What?) {cha:implementation}
+
+## ...
+Felis eget velit aliquet sagittis id consectetur purus ut faucibus. Dolor magna eget est lorem ipsum dolor sit. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Id interdum velit laoreet id donec ultrices tincidunt arcu. Ipsum nunc aliquet bibendum enim facilisis. Posuere morbi leo urna molestie at elementum eu facilisis. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Platea dictumst quisque sagittis purus sit. Nec ultrices dui sapien eget mi proin sed libero enim. Amet justo donec enim diam vulputate ut pharetra sit amet. Sed blandit libero volutpat sed cras ornare arcu dui. Congue nisi vitae suscipit tellus mauris a diam maecenas. Ac felis donec et odio.
