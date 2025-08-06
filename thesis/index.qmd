@@ -2,6 +2,23 @@
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat nam at lectus urna. Vitae purus faucibus ornare suspendisse sed nisi lacus. Turpis egestas integer eget aliquet nibh praesent tristique magna. Et netus et malesuada fames ac turpis egestas. Nunc vel risus commodo viverra maecenas accumsan lacus. Nisi scelerisque eu ultrices vitae auctor eu augue. Odio morbi quis commodo odio aenean sed adipiscing. Ultricies lacus sed turpis tincidunt id aliquet. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus. Tellus rutrum tellus pellentesque eu tincidunt tortor.
 
+```{r}
+library(PRISMA2020)
+csvFile <- system.file("extdata", "PRISMA.csv", package = "PRISMA2020")
+data <- read.csv(csvFile);
+data <- PRISMA_data(data);
+plot <- PRISMA_flowdiagram(data,
+                fontsize = 12,
+                interactive = TRUE,
+                previous = FALSE,
+                other = TRUE);
+plot <- PRISMA_save(plot, filename = "images/prisma.png", filetype = "png", overwrite = TRUE)
+```
+
+<!-- ![PRISMA flowdiagrame](images/prisma.png) -->
+
+<!-- ![](images/uni-logo.pdf) -->
+
 Felis eget velit aliquet sagittis id consectetur purus ut faucibus. Dolor magna eget est lorem ipsum dolor sit. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Id interdum velit laoreet id donec ultrices tincidunt arcu. Ipsum nunc aliquet bibendum enim facilisis. Posuere morbi leo urna molestie at elementum eu facilisis. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Platea dictumst quisque sagittis purus sit. Nec ultrices dui sapien eget mi proin sed libero enim. Amet justo donec enim diam vulputate ut pharetra sit amet. Sed blandit libero volutpat sed cras ornare arcu dui. Congue nisi vitae suscipit tellus mauris a diam maecenas. Ac felis donec et odio.
 
 Eget lorem dolor sed viverra ipsum nunc aliquet. Diam volutpat commodo sed egestas egestas fringilla phasellus. Enim nunc faucibus a pellentesque sit amet. Blandit cursus risus at ultrices mi tempus imperdiet. Ornare arcu dui vivamus arcu felis bibendum ut tristique. Accumsan in nisl nisi scelerisque eu ultrices. Et tortor at risus viverra adipiscing. Convallis convallis tellus id interdum. Blandit massa enim nec dui nunc. Vitae tortor condimentum lacinia quis vel eros donec ac odio.
