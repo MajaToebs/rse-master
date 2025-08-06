@@ -1,1 +1,16 @@
 /.quarto/
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.loa
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.run.xml
+*.synctex.gz
+thesis.pdf

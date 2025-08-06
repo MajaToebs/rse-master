@@ -1,10 +1,6 @@
 project:
   type: book
   output-dir: output
-  post-render:
-    - rm index.loa 
-    - rm intro.aux
-    - rm outro.aux
 
 book:
   # These have to be changed in "thesis.cfg"
